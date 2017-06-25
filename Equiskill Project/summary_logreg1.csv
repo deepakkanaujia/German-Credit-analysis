@@ -1,0 +1,31 @@
+
+Call:
+glm(formula = Default_On_Payment ~ Duration_Dummy + Account_Status + 
+    Cedit_History_Dummy + Purpose_for_Credit + Savings_Acc_Dummy + 
+    Property_Dummy + Age, family = binomial("logit"), data = newdata)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.7121  -0.7773  -0.4919   0.9382   2.6109  
+
+Coefficients:
+                     Estimate Std. Error z value Pr(>|z|)    
+(Intercept)          0.766575   0.061629   12.44   <2e-16 ***
+Duration_Dummy       0.452516   0.019688   22.98   <2e-16 ***
+Account_Status      -0.575374   0.010632  -54.12   <2e-16 ***
+Cedit_History_Dummy -0.364529   0.011940  -30.53   <2e-16 ***
+Purpose_for_Credit  -0.010453   0.004505   -2.32   0.0203 *  
+Savings_Acc_Dummy   -0.219366   0.008806  -24.91   <2e-16 ***
+Property_Dummy       0.259257   0.012385   20.93   <2e-16 ***
+Age                 -0.013454   0.001124  -11.96   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 48956  on 40118  degrees of freedom
+Residual deviance: 40540  on 40111  degrees of freedom
+AIC: 40556
+
+Number of Fisher Scoring iterations: 4
+
